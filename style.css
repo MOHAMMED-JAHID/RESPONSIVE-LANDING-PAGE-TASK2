@@ -1,0 +1,943 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    outline: none;
+    text-decoration: none;
+    
+    font-family: 'League Gothic', sans-serif;
+    justify-content: space-around;
+    cursor: pointer!important;
+}
+html {
+    width: 100%;
+    height: 100%;
+    font-size: 62.5%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden !important;
+  }
+  body::-webkit-scrollbar{
+    display: none;
+  }
+.logo img,footer{
+    height:50px;
+    width:50px;
+}
+header{
+    position:fixed;
+    background: transparent;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 20px;
+    align-content:center ;
+    z-index: 999;
+    transition: transform 2.2s ease;
+  }
+.navi.active{
+    transform: translateY(-100px);
+    display: none;
+}
+.head{
+    padding:10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.head .navbar a{
+    margin-left: 4em;
+    font-size: 15px;
+    border-bottom: 2px solid;
+    text-decoration: none;
+    color:white;
+    font-family: 'Lato', sans-serif;
+
+}
+header .head .bar1 a strong em{
+    font-family: 'Lato', sans-serif;
+}
+#sechead{
+    margin:0 2% 0 2%;
+}
+.sec1{
+    top: 0;
+    left: 0;
+    width: auto;
+    height: 100vh;
+    position: relative;
+    justify-content: space-around; 
+    display: flex;
+  
+}
+#image{
+
+    background: url('./images/bg1.png') no-repeat;
+    background-size:cover ;
+    object-fit: fill;
+    height:100vh;
+    width:100%;
+    z-index: 0;
+}
+#cbg{
+    width: 100%;
+    /* mix-blend-mode:screen;   */
+    shape-outside: url('./images/bg.png');
+    shape-margin: 2rem;
+    z-index: 1;
+    padding: 0;
+    margin: 0;
+}
+#textbg{
+    margin-top: 11%;
+    margin-left:22%;
+    
+}
+#cbg span{
+    
+    font-weight: 400;  
+    width: max-content;
+    font-family: 'Bebas Neue', sans-serif;
+}
+.LOS{
+    color: rgb(61, 61, 61);
+    
+}
+.sec1 #cbg .LOS{
+    font-size: 15.5em;
+}
+.sec1 #cbg  .MOUNT{
+    font-size: 17em;
+    margin-top: -7%;
+    bottom:0;
+    line-gap-override: 0;
+    color: #37465E;
+    border-radius: 12px 35px 0 10px ;
+    clip-path: polygon(0% 0%, 0 66%, 10% 71%, 18% 68%, 21% 69%, 27% 70%, 34% 68%, 41% 70%, 59% 72%, 60% 80%, 95% 80%, 97% 57%, 100% 47%, 100% 0%, 0 0, 12% 73%);
+
+}    
+.logopic{
+    display: flex;
+}
+#sechead .logopic strong .MOUNT{
+    color:#37465E;
+}
+.bar2 em{
+    color: black;
+    border-bottom: solid black;
+    font-family: 'Lato', sans-serif;
+
+}
+span{
+    display: block;
+    font-size: 16px;
+}
+strong{
+    margin: 3px;
+}
+#sechead .LOS,.footerpic .LOS{
+    font-size: 15px;
+}
+#first-section{
+    top: 0;
+    left: 0;
+    width: auto;
+    height: 100vh;
+    background: url('./images/peak.png') no-repeat;
+    background-size: cover;
+    position: relative;
+    object-fit: cover;
+    background-position: 10% 25%;
+}
+.dummy{
+    top:0;
+    left:0;
+    padding-top: 8%;
+    text-align: left; display:flex; flex-direction: column;
+    position: absolute;  
+    width:70%;
+    margin:0 0  0 20%;
+    /* display: inline-block; */
+    /* vertical-align: middle; */
+}
+.numbers{
+    font-size: 14rem;
+    color: #6a7b979d;
+    font-weight: 900;
+    position: relative;
+    width:100%
+}
+.shead{
+    margin-top: 6%;
+    margin-left:8%;
+    font-size: 3rem;
+    font-weight: 900;
+    position: absolute;
+    color: #37465E;
+}
+.sec2 .stopic{
+    display: flex;
+    justify-content:start !important;
+}
+.history-text{
+    width:60vw;
+    font-size: 18px;
+    font-weight: 300;
+}
+.history-text p{
+    font-family: 'Lato', sans-serif;
+}
+#bannerbg{
+    background: #37465E;
+    height: 25%;
+    width: 100%;
+    bottom:0;
+    position: absolute;
+}
+.slider-container{
+    display: inline;
+    flex-direction: row;
+}
+.slide2{
+    display: none;
+}
+.slide3{
+    display: none;
+}
+.sliderimg{
+    margin-top: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+}
+.sliderimg img{
+    height:120px;
+    width:200px;
+
+}
+.slider{
+    z-index: 768;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(80px);
+    margin-top: -70px;
+
+}
+.slider .img-nav{
+    width: 12px;
+    height: 12px;
+    margin:3px;
+    background-color: rgb(85, 85, 85) ;
+    border-color: #2e2e2edb;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 2px rgb(151, 151, 151);
+    transition: 0.3s ease;
+}
+.slider .img-nav:hover{
+    background-color: rgba(241, 231, 231, 0.895);
+    border: 1px solid rgb(10, 9, 9);
+    transform: scale(1.2);
+}
+#climb{
+    top:0;
+    left:0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+#climb .numbers{
+    color:#9FA7B5;
+    width:100%;
+}
+#climbdbox{
+    display: inline-flex;
+    align-items: center;
+    width: 105%;
+}
+.chead{
+    margin-top: -6%;
+    margin-left: 7%;
+    font-size: 3rem;
+    font-weight: 900;
+    position: absolute;
+    color:#37465E;
+}
+#climbdbox p{
+    margin-left: 8%;
+    font-size: 14px;
+    max-width: max-content;
+    font-family: 'Lato', sans-serif;
+}
+.mountainmenu{
+    background:#37465E;
+    width: 100%;
+    height: 5vh;
+    margin-top: auto;
+    margin-bottom: auto;
+    align-items: center;
+}
+.mountain,footer{
+    margin-left: auto;
+    margin-right: auto;
+    width: 55%;
+    
+}
+#mount{
+    display: inline-flex;
+    flex-wrap: nowrap;
+    font-size: 1.5em;
+    align-items: center;
+}
+#mount h3 a{
+    text-decoration: none;
+    color:#9fa7b5;
+    margin-left: 1vh;
+    align-items: center;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.mount1, .mount2{
+    padding: 1vh;
+}
+
+.mount1.active,.mount2.active{
+    background: #9fa7b5;
+
+}
+.mount1.active a b,.mount2.active a b{
+    color: #37465E;
+    font-size: 1.7rem;
+    border-bottom: 2px solid;
+}
+#mountain1{
+    background: url('./images/mountain1.png') no-repeat;
+    background-size:cover ;
+    background-position: center;
+    height: 75vh;
+    width:100%;
+    position: relative;
+}
+#mountain2{
+    background: url('./images/mountain2.png') no-repeat;
+    background-size:cover ;
+    object-fit: contain;
+    height:75vh;
+    width:100%;
+    display :none;
+    position: relative;
+}
+
+footer{
+    height:8vh;
+    width:100%;
+    background:#37465E;
+}
+.footerpic .logo{
+    display: inline-flex;
+    align-items: center;
+}
+.footerpic .logo img{
+    margin-top: 5%;
+}
+.footerpic strong span{
+    color:#9FA7B5;
+    margin-top: 5%;
+}
+.footerpic{
+    display: flex;
+    align-items: center;
+    opacity: 0.4;
+}
+#copyright{
+    color:#9FA7B5;
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+}
+.schedulet{
+    background: rgba(255, 255, 255, 0.701);
+    height:30vh;
+    width: 40vh;
+    margin-left: 25%;
+    top:15vh;
+    position: absolute;
+}
+.schedulede h3{
+    font-size: 25px;
+    font-weight: 900;
+    color:#37465E;
+    margin: 5% 5% 0 10%;
+}
+.schedulede .dates{
+    margin: 8%;
+}
+.schedulede .dates .date{
+    display:flex;
+    justify-content: space-between;
+    
+}
+.schedulede .dates .date span{
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+}
+.schedulede .dates .date span a{
+    text-decoration: none;
+    color:black;
+    font-family: 'Lato', sans-serif;
+}
+
+
+
+
+
+
+
+@media (min-width:319px) and (max-width:369px){
+    
+.sec1 #cbg .LOS{
+    margin-top: 58%;
+       font-size: 5.5rem;
+   }
+   .sec1 #cbg .MOUNT{
+       font-size: 6rem;
+       clip-path: polygon(14% 76%, 24% 76%, 100% 78%, 99% 0%, 0% 0%, 0 46%);
+         
+    
+    } 
+    .logo img{
+       height: 40px;
+       width: 40px;
+   }
+
+   header{
+    width: 100dvw;
+   }
+   .head .navbar a{
+       font-size: .8rem;
+   }
+    .sec2 .numbers{
+        font-size: 5rem;
+    }
+    .sec2 .shead{
+        font-size: 1rem;
+        margin-left: 15%;
+        margin-top: 10%;
+    }
+    .sec2 .history-text {
+        font-size: 12px;
+    }
+    #bannerbg{
+        height: 20%;
+    }
+    .sliderimg{
+        display:grid;
+    }
+    .sliderimg img{
+        height:60px;
+        width:70px;
+    
+    }
+    .slider .img-nav{
+        width: 5px;
+        height: 5px;
+        margin:2px;
+    }
+    #climb{
+        justify-content: center;
+        width: 100%;
+        position: relative;
+    }
+    #climb .numbers{
+        font-size: 5rem;
+    }
+    #climb .chead{
+        font-size: 1.5rem;
+        margin-left: 12%;
+        margin-top: -12%;        
+    }
+    #climb p{
+        font-size: 8px;
+        width: 40%;
+    }
+    .mountainmenu{
+        height: 5vh;
+    }
+    #mount{
+        font-size: 1rem;
+    }
+    .mount1.active a b,.mount2.active a b{
+        font-size: 1.2rem;
+    }
+    #mountain1,#mountain2{
+        height: 84vh;
+    }
+    footer{
+        height: 6vh;
+    }
+    .footerpic .logo img{
+        height: 20px;
+        width: 20px;
+    }
+    .footerpic strong .LOS,.footerpic strong .MOUNT{
+        height:1.5vh;
+        font-size: 1rem;
+    }
+    footer #copyright{
+        font-size:6px
+    }
+    .schedulet{
+        height:28vh;
+        width:35vh;
+    }
+    .schedulede h3{
+        font-size: 2rem;
+    }
+    .schedulede .dates .date span{
+        font-size: 1.2rem;
+    }
+}
+
+
+
+
+/* RESPONSIVE */
+
+
+
+@media (min-width:340px)and(max-width:369px) {
+    .head .navbar a{
+        font-size: .6rem;
+    }
+    .sec1 #cbg .LOS{
+        margin-top: 43%;
+           font-size: 6rem;
+       }
+       .sec1 #cbg .MOUNT{
+           font-size: 6.5rem;             
+        } 
+        #bannerbg{
+        height: 20%;
+    }
+    .sliderimg{
+        display:grid;
+    }
+    .sliderimg img{
+        height:60px;
+        width:70px;
+    
+    }
+    .slider .img-nav{
+        width: 5px;
+        height: 5px;
+        margin:2px;
+    }
+    .history-text{
+        font-size: 14px;
+    }
+    #copyright{
+        font-size: 10px;    }
+}
+@media (min-width:370px) and (max-width:420px){
+    .logo img{
+        height: 40px;
+        width: 40px;
+    }
+    .head .navbar a{
+        font-size: .8rem;
+    }
+    .sec1 #cbg .LOS{
+        margin-top: 72%;
+        font-size: 6.2rem;
+       }
+    .sec1 #cbg .MOUNT{
+        font-size: 6.8rem;
+        clip-path: polygon(14% 76%, 24% 76%, 100% 78%, 99% 0%, 0% 0%, 0 53%);             
+             
+        } 
+    #textbg{
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        }
+        .history-text{
+            font-size: 14px;
+        }
+        .sec2 .shead{
+            font-size: 1.2rem;
+            margin-left: 11%;
+            margin-top: 6%;
+        }
+        #climb .chead{
+            font-size: 1.2rem;
+            margin-left: 8%;
+            margin-top: -10%;        
+        }
+        .numbers{
+            font-size: 4rem;
+        }
+        #climb p{
+            font-size: .8rem;
+            width: 70%;
+        }
+    #bannerbg{
+        height: 20%;
+    }
+    .sliderimg{
+        display:grid;
+    }
+    .sliderimg img{
+        height:60px;
+        width:70px;
+    
+    }
+    .slider .img-nav{
+        width: 5px;
+        height: 5px;
+        margin:2px;
+    }
+    #copyright{
+        font-size: 10px;    }
+    }
+@media (min-width:422px) and (max-width:709px) {
+    .head .navbar a{
+        font-size: 1rem;
+    }
+    .sec1 #cbg .LOS{
+        margin-top: 43%;
+        font-size: 6.5rem;
+        }
+    .sec1 #cbg .MOUNT{
+        font-size:7rem;
+        clip-path: polygon(14% 76%, 24% 76%, 100% 78%, 99% 0%, 0% 0%, 0 53%);             
+        }
+        .numbers{
+            font-size: 5rem;
+        }
+        .history-text{
+            font-size: 14px;
+        }
+    .sec2 .shead{
+        font-size: 1.2rem;
+        margin-left: 11%;
+        margin-top: 8%;
+    }
+    #climb .chead{
+        font-size: 1.2rem;
+        margin-left: 8%;
+        margin-top: -8%;        
+    }
+    #climb p{
+        font-size: .8rem;
+        width: 70%;
+    }
+     #bannerbg{
+        height: 30%;
+    }
+    .sliderimg{
+        display:grid;
+    }
+    .sliderimg img{
+        height:80px;
+        width:80px;
+    
+    }
+    .slider .img-nav{
+        width: 6px;
+        height: 6px;
+        margin:3px;
+    }
+    #copyright{
+        font-size: 10px;    }
+        }
+
+        
+@media (max-width:1003px) and (min-width:600px){
+    .logo img{
+        height: 40px;
+        width: 40px;
+    }
+    .head .navbar a{
+        font-size: 1.2rem;
+    }
+    .sec1 #cbg .LOS{
+        margin-top: 30%;
+        font-size: 10rem;
+        }
+    #textbg{
+        margin-top: 15%;
+        margin-left:30%;
+            
+        }
+        .numbers{
+            font-size: 7rem;
+        }
+        .history-text{
+            font-size: 16px;
+        }
+    .sec1 #cbg .MOUNT{
+        font-size:10.5rem;
+        clip-path: polygon(0% 0%, 0 51%, 11% 65%, 25% 71%, 38% 70%, 48% 66%, 55% 67%, 63% 66%, 69% 65%, 75% 77%, 89% 78%, 100% 85%, 100% 0%);
+    }
+    .sec2 .shead{
+        font-size: 1.4rem;
+        margin-left: 9.5%;
+        margin-top: 6%;
+    }
+    #climb .chead{
+        font-size: 1.4rem;
+        margin-left: 8%;
+        margin-top: -7%;        
+    }
+    #climb p{
+        font-size: 14px;
+    }
+    #bannerbg{
+        height: 30%;
+    }
+    .sliderimg img{
+        height:100px;
+        width:130px;
+    
+    }
+    .slider .img-nav{
+        width: 7px;
+        height: 7px;
+        margin:4px;
+    }
+    #copyright{
+        font-size: 12px;    }
+    }
+@media (min-width:1003px) and (max-width:1400px){
+    .logo img{
+        height: 40px;
+        width: 40px;
+    }    
+    .sec1 #cbg .LOS{
+                margin-top: 17%;
+                font-size: 12rem;
+                }
+        #textbg{
+            margin-left: 25%;
+        }
+        .sec1 #cbg .MOUNT{
+                font-size:13rem;
+                clip-path: polygon(0% 0%, 0 62%, 12% 69%, 25% 68%, 36% 70%, 46% 69%, 52% 69%, 64% 70%, 66% 75%, 70% 80%, 96% 83%, 100% 76%, 100% 0%);
+            }  
+            .numbers{
+                font-size: 8rem;
+            }
+            .history-text{
+                font-size: 14px;
+            }  
+        .sec2 .shead{
+        font-size: 1.5rem;
+        margin-left: 7%;
+        margin-top: 6%;
+        }
+        #climb .chead{
+        font-size: 1.5rem;
+        margin-left: 6%;
+        margin-top: -5%;        
+        } 
+        .logopic #LOS,.footerpic #FLOS{
+                margin-top: 8px;
+        }  
+        #bannerbg{
+            height: 30%;
+        }
+        .sliderimg img{
+            height:130px;
+            width:150px;
+        
+        }
+        .slider .img-nav{
+            width: 9px;
+            height: 9px;
+            margin:5px;
+        } 
+        footer .logo img{
+            height: 30px;
+            width: 30px;
+        }        
+                            }
+@media (min-width:2000px) and (max-width:2520px){
+        .sec1 #cbg .LOS{
+                margin-top: 22%;
+                font-size: 15.7rem;
+                }
+        #textbg{
+            margin-left: 30%;
+        }
+        .sec1 #cbg .MOUNT{
+                font-size:17rem;
+                clip-path: polygon(0% 0%, 0 69%, 11% 65%, 25% 64%, 35% 67%, 48% 66%, 55% 67%, 57% 71%, 63% 76%, 67% 82%, 96% 83%, 100% 76%, 100% 0%);
+            }  
+              
+        .sec2 .shead{
+        font-size: 3rem;
+        margin-left: 8%;
+        margin-top: 5%;
+        }
+        #climb .chead{
+        font-size: 3rem;
+        margin-left: 7%;
+        margin-top: -5%;        
+        }
+        #climb p{
+            width:70%
+        }
+        .history-text{
+            width: 70%;
+        }   
+        #bannerbg{
+            height: 30%;
+        }
+        .sliderimg img{
+            height:150px;
+            width:170px;
+        
+        }
+        .slider .img-nav{
+            width: 10px;
+            height: 10px;
+            margin:8px;
+        }         
+                            }
+    @media (min-width:2530px){
+        .sec1 #cbg .LOS{
+                margin-top: 15%;
+                font-size: 28rem;
+                }
+        #textbg{
+            margin-left: 23%;
+        }
+        .sec1 #cbg .MOUNT{
+                font-size:30rem;
+                margin-top: -7%;
+                clip-path: polygon(0% 0%, 0 66%, 10% 71%, 18% 68%, 21% 69%, 27% 70%, 34% 68%, 41% 70%, 59% 72%, 60% 80%, 95% 80%, 97% 57%, 100% 47%, 100% 0%, 0 0, 12% 73%);
+
+            }  
+            .numbers{
+                font-size: 14rem;
+            }  
+        .sec2 .shead{
+        font-size: 4rem;
+        margin-left: 5%;
+        margin-top: 3%;
+        }
+        .logo img{
+            height: 100px;
+            width: 100px;
+        }
+        .head{
+            align-items: center;
+        }
+        .head .navbar a em{
+            font-size: 45px;
+        }
+        .logopic strong .MOUNT {
+            font-size: 28px;
+        }
+        .logopic strong #LOS {
+            font-size: 25px;
+            margin-top: 20px;
+        }
+        #climb .chead{
+        font-size: 4rem;
+        margin-left: 5%;
+        margin-top: -5%;        
+        }
+        #climb p{
+            width:70%;
+            font-size: 25px;
+        }
+        .history-text{
+            width: 70%;
+            font-size: 26px;
+        }   
+        #bannerbg{
+            height: 30%;
+        }
+        .sliderimg img{
+            height:350px;
+            width:380px;
+        
+        }
+        .slider .img-nav{
+            width: 20px;
+            height: 20px;
+            margin:14px;
+        }
+        .mountainmenu h3{
+            font-size: 45px;
+        }
+        .mount1.active a b,.mount2.active a b{
+            font-size: 45px;
+        }
+        .schedulede h3{
+            font-size: 55px;
+        }
+        .schedulede .dates .date span{
+            font-size: 35px;
+        }
+        footer strong .MOUNT {
+            font-size: 28px;
+        }
+        footer strong #FLOS {
+            font-size: 25px;
+            margin-top: 20px;
+        }
+        #copyright{
+            font-size: 30px;
+        } }
+
+@media (min-width:1401px) and (max-width:1485px){
+        .sec1 #cbg .LOS{
+                margin-top: 15%;
+                font-size: 15.7rem;
+                }
+        #textbg{
+            margin-left: 23%;
+        }
+        .sec1 #cbg .MOUNT{
+                font-size:17rem;
+                clip-path: polygon(0% 0%, 0 62%, 12% 69%, 25% 68%, 36% 70%, 46% 69%, 52% 69%, 64% 70%, 66% 75%, 70% 80%, 95% 79%, 100% 47%, 100% 0%);
+            }    
+        .sec2 .shead{
+        font-size: 3rem;
+        margin-left: 9%;
+        margin-top: 6%;
+        }
+        #climb .chead{
+        font-size: 3rem;
+        margin-left: 7%;
+        margin-top: -7%;        
+        }
+        #climb p{
+            width:70%
+        }
+        .history-text{
+            width: 70%;
+        }   
+        #bannerbg{
+            height: 30%;
+        }
+        .sliderimg img{
+            height:150px;
+            width:170px;
+        
+        }
+        .slider .img-nav{
+            width: 10px;
+            height: 10px;
+            margin:8px;
+        } }
